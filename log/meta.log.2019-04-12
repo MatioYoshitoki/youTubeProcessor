@@ -1,0 +1,14 @@
+2019-04-12 16:13:12.563 -[main] INFO  org.apache.http.impl.client.DefaultHttpClient  -I/O exception (java.net.NoRouteToHostException) caught when connecting to {}->http://www.youtube.com:80: No route to host
+2019-04-12 16:13:12.566 -[main] INFO  org.apache.http.impl.client.DefaultHttpClient  -Retrying connect to {}->http://www.youtube.com:80
+2019-04-12 16:17:11.383 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://www.youtube.com:80: No route to host
+2019-04-12 16:17:11.387 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -Retrying request to {}->http://www.youtube.com:80
+2019-04-12 16:17:11.389 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://www.youtube.com:80: No route to host
+2019-04-12 16:17:11.389 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -Retrying request to {}->http://www.youtube.com:80
+2019-04-12 16:17:11.392 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -I/O exception (java.net.NoRouteToHostException) caught when processing request to {}->http://www.youtube.com:80: No route to host
+2019-04-12 16:17:11.392 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -Retrying request to {}->http://www.youtube.com:80
+2019-04-12 16:47:22.778 -[main] INFO  org.apache.http.impl.client.DefaultHttpClient  -I/O exception (java.net.NoRouteToHostException) caught when connecting to {}->http://www.youtube.com:80: No route to host
+2019-04-12 16:47:22.784 -[main] INFO  org.apache.http.impl.client.DefaultHttpClient  -Retrying connect to {}->http://www.youtube.com:80
+2019-04-12 16:52:24.195 -[main] INFO  org.apache.http.impl.client.DefaultHttpClient  -I/O exception (java.net.NoRouteToHostException) caught when connecting to {}->http://www.youtube.com:80: No route to host
+2019-04-12 16:52:24.197 -[main] INFO  org.apache.http.impl.client.DefaultHttpClient  -Retrying connect to {}->http://www.youtube.com:80
+2019-04-12 16:56:10.622 -[main] INFO  org.apache.http.impl.client.DefaultHttpClient  -I/O exception (java.net.NoRouteToHostException) caught when connecting to {}->http://www.youtube.com:80: No route to host
+2019-04-12 16:56:10.624 -[main] INFO  org.apache.http.impl.client.DefaultHttpClient  -Retrying connect to {}->http://www.youtube.com:80

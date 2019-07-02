@@ -1,0 +1,16 @@
+#db=jdbc:mysql://39.104.97.69:3366/cartip?useSSL=true&verifyServerCertificate=false&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false
+#user=cartip
+#password=rebind1234
+
+#db=jdbc:mysql://localhost:3306/video?useSSL=true&verifyServerCertificate=false&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false
+#user=root
+#password=79839921
+
+db=jdbc:mysql://localhost:3306/video?useSSL=true&verifyServerCertificate=false&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false
+user=root
+password=Wanlingyun1234.
+
+initialSize=10
+minIdle=100
+maxActive=2000
+

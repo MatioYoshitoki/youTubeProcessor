@@ -1,0 +1,675 @@
+2019-04-15 10:45:15.464 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://127.0.0.1:57685->https://r2---sn-jxnj5-cjoe.googlevideo.com:443: The target server failed to respond
+2019-04-15 10:45:15.471 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -Retrying request to {tls}->http://127.0.0.1:57685->https://r2---sn-jxnj5-cjoe.googlevideo.com:443
+2019-04-15 10:45:15.475 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://127.0.0.1:57685->https://r2---sn-jxnj5-cjoe.googlevideo.com:443: The target server failed to respond
+2019-04-15 10:45:15.475 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -Retrying request to {tls}->http://127.0.0.1:57685->https://r2---sn-jxnj5-cjoe.googlevideo.com:443
+2019-04-15 10:45:15.480 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {tls}->http://127.0.0.1:57685->https://r2---sn-jxnj5-cjoe.googlevideo.com:443: The target server failed to respond
+2019-04-15 10:45:15.480 -[main] INFO  org.apache.http.impl.execchain.RetryExec  -Retrying request to {tls}->http://127.0.0.1:57685->https://r2---sn-jxnj5-cjoe.googlevideo.com:443
+2019-04-15 11:48:50.542 -[Thread-0] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 11:49:00.185 -[Thread-0] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 11:49:27.354 -[Thread-0] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 11:49:37.551 -[Thread-0] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 11:58:21.973 -[Thread-0] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 11:58:31.360 -[Thread-0] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 13:39:37.347 -[Thread-0] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 13:39:46.989 -[Thread-0] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 17:48:49.849 -[main] WARN  config.Config  -finish initPid()
+2019-04-15 17:48:50.571 -[main] INFO  com.alibaba.druid.pool.DruidDataSource  -{dataSource-1} inited
+2019-04-15 17:48:50.593 -[main] WARN  config.Config  -finish initDB()
+2019-04-15 17:48:50.593 -[main] WARN  config.Config  -finish initMongo()
+2019-04-15 17:48:50.593 -[main] WARN  config.Config  -finish initAll()
+2019-04-15 17:48:50.836 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:48:57.001 -[pool-1-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'z7NeBs5wNOA' in 'where clause'
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:455)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:474)
+	at pipeline.NormalPipeline$1.run(NormalPipeline.java:47)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:644)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:680)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:440)
+	at pipeline.NormalPipeline.save(NormalPipeline.java:41)
+	at pipeline.NormalPipeline.process(NormalPipeline.java:35)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:419)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'z7NeBs5wNOA' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:436)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:453)
+	... 15 more
+2019-04-15 17:48:57.484 -[pool-1-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism&page=2', method='null', extras=null, priority=0, headers={}, cookies={}} error
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'wKsJvCZOg3k' in 'where clause'
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:455)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:474)
+	at pipeline.NormalPipeline$1.run(NormalPipeline.java:47)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:644)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:680)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:440)
+	at pipeline.NormalPipeline.save(NormalPipeline.java:41)
+	at pipeline.NormalPipeline.process(NormalPipeline.java:35)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:419)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'wKsJvCZOg3k' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:436)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:453)
+	... 15 more
+2019-04-15 17:48:58.208 -[pool-1-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism&page=3', method='null', extras=null, priority=0, headers={}, cookies={}} error
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '0edC6hzCgng' in 'where clause'
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:455)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:474)
+	at pipeline.NormalPipeline$1.run(NormalPipeline.java:47)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:644)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:680)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:440)
+	at pipeline.NormalPipeline.save(NormalPipeline.java:41)
+	at pipeline.NormalPipeline.process(NormalPipeline.java:35)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:419)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '0edC6hzCgng' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:436)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:453)
+	... 15 more
+2019-04-15 17:48:58.629 -[pool-1-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism&page=4', method='null', extras=null, priority=0, headers={}, cookies={}} error
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'JLqmeOF3lpc' in 'where clause'
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:455)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:474)
+	at pipeline.NormalPipeline$1.run(NormalPipeline.java:47)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:644)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:680)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:440)
+	at pipeline.NormalPipeline.save(NormalPipeline.java:41)
+	at pipeline.NormalPipeline.process(NormalPipeline.java:35)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:419)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'JLqmeOF3lpc' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:436)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:453)
+	... 15 more
+2019-04-15 17:48:59.274 -[pool-1-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism&page=5', method='null', extras=null, priority=0, headers={}, cookies={}} error
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'wmtZ5CXVEPE' in 'where clause'
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:455)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:474)
+	at pipeline.NormalPipeline$1.run(NormalPipeline.java:47)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:644)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:680)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:440)
+	at pipeline.NormalPipeline.save(NormalPipeline.java:41)
+	at pipeline.NormalPipeline.process(NormalPipeline.java:35)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:419)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'wmtZ5CXVEPE' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:436)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:453)
+	... 15 more
+2019-04-15 17:48:59.794 -[pool-1-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism&page=6', method='null', extras=null, priority=0, headers={}, cookies={}} error
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:455)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:474)
+	at pipeline.NormalPipeline$1.run(NormalPipeline.java:47)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:644)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:680)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:440)
+	at pipeline.NormalPipeline.save(NormalPipeline.java:41)
+	at pipeline.NormalPipeline.process(NormalPipeline.java:35)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:419)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:436)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:453)
+	... 15 more
+2019-04-15 17:49:00.334 -[pool-1-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism&page=7', method='null', extras=null, priority=0, headers={}, cookies={}} error
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '_MA7o6FgPRU' in 'where clause'
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:455)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:474)
+	at pipeline.NormalPipeline$1.run(NormalPipeline.java:47)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:644)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:680)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:440)
+	at pipeline.NormalPipeline.save(NormalPipeline.java:41)
+	at pipeline.NormalPipeline.process(NormalPipeline.java:35)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:419)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '_MA7o6FgPRU' in 'where clause'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:942)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1962)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:227)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:436)
+	at com.jfinal.plugin.activerecord.Model.find(Model.java:453)
+	... 15 more
+2019-04-15 17:49:59.408 -[main] WARN  config.Config  -finish initPid()
+2019-04-15 17:50:00.299 -[main] INFO  com.alibaba.druid.pool.DruidDataSource  -{dataSource-1} inited
+2019-04-15 17:50:00.315 -[main] WARN  config.Config  -finish initDB()
+2019-04-15 17:50:00.315 -[main] WARN  config.Config  -finish initMongo()
+2019-04-15 17:50:00.315 -[main] WARN  config.Config  -finish initAll()
+2019-04-15 17:50:00.565 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:52:10.476 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 33 pages downloaded.
+2019-04-15 17:55:13.140 -[main] WARN  config.Config  -finish initPid()
+2019-04-15 17:55:14.050 -[main] INFO  com.alibaba.druid.pool.DruidDataSource  -{dataSource-1} inited
+2019-04-15 17:55:14.073 -[main] WARN  config.Config  -finish initDB()
+2019-04-15 17:55:14.074 -[main] WARN  config.Config  -finish initMongo()
+2019-04-15 17:55:14.074 -[main] WARN  config.Config  -finish initAll()
+2019-04-15 17:55:14.497 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.497 -[Thread-3] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.497 -[Thread-2] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.501 -[Thread-4] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.505 -[Thread-5] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.510 -[Thread-6] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.513 -[Thread-7] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.519 -[Thread-8] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.525 -[Thread-9] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.531 -[Thread-10] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.553 -[Thread-11] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.559 -[Thread-12] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 17:55:14.604 -[pool-8-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=PDD- NOS&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 49: https://www.youtube.com/results?search_query=PDD- NOS&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 49: https://www.youtube.com/results?search_query=PDD- NOS&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 17:55:14.605 -[pool-6-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autistic kid&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic kid&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic kid&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 17:55:14.605 -[pool-3-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism spectrum disorder&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 51: https://www.youtube.com/results?search_query=autism spectrum disorder&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 51: https://www.youtube.com/results?search_query=autism spectrum disorder&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 17:55:14.605 -[pool-12-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=birthday party&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=birthday party&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=birthday party&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 17:55:14.604 -[pool-5-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autistic child&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic child&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic child&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 17:55:14.604 -[pool-7-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autistic behavior&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic behavior&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic behavior&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 17:55:14.615 -[Thread-5] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 17:55:14.613 -[Thread-12] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 17:55:14.613 -[Thread-3] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 17:55:14.612 -[Thread-6] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 17:55:14.611 -[Thread-8] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 17:55:14.616 -[Thread-7] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 17:56:56.273 -[Thread-11] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 23 pages downloaded.
+2019-04-15 17:57:04.928 -[Thread-9] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 25 pages downloaded.
+2019-04-15 17:57:19.688 -[Thread-10] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 29 pages downloaded.
+2019-04-15 17:57:34.671 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 33 pages downloaded.
+2019-04-15 17:57:38.586 -[Thread-4] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 34 pages downloaded.
+2019-04-15 17:57:39.217 -[Thread-2] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 33 pages downloaded.
+2019-04-15 18:52:06.945 -[main] WARN  config.Config  -finish initPid()
+2019-04-15 18:52:07.735 -[main] INFO  com.alibaba.druid.pool.DruidDataSource  -{dataSource-1} inited
+2019-04-15 18:52:07.763 -[main] WARN  config.Config  -finish initDB()
+2019-04-15 18:52:07.763 -[main] WARN  config.Config  -finish initMongo()
+2019-04-15 18:52:07.763 -[main] WARN  config.Config  -finish initAll()
+2019-04-15 18:52:08.141 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.142 -[Thread-2] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.146 -[Thread-3] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.149 -[Thread-4] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.154 -[Thread-5] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.159 -[Thread-6] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.163 -[Thread-7] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.173 -[Thread-8] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.178 -[Thread-9] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.182 -[Thread-10] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.206 -[Thread-11] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.211 -[Thread-12] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:52:08.263 -[pool-12-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=birthday party&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=birthday party&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=birthday party&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 18:52:08.264 -[pool-7-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autistic behavior&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic behavior&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic behavior&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 18:52:08.264 -[pool-5-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autistic child&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic child&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic child&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 18:52:08.264 -[pool-6-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autistic kid&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic kid&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 53: https://www.youtube.com/results?search_query=autistic kid&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 18:52:08.272 -[Thread-6] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:52:08.264 -[pool-3-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism spectrum disorder&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+java.lang.IllegalArgumentException: Illegal character in query at index 51: https://www.youtube.com/results?search_query=autism spectrum disorder&page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.RequestBuilder.setUri(RequestBuilder.java:347)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convertHttpUriRequest(HttpUriRequestConverter.java:60)
+	at us.codecraft.webmagic.downloader.HttpUriRequestConverter.convert(HttpUriRequestConverter.java:35)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:83)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in query at index 51: https://www.youtube.com/results?search_query=autism spectrum disorder&page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3111)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 11 more
+2019-04-15 18:52:08.270 -[Thread-5] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:52:08.269 -[Thread-7] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:52:08.268 -[Thread-12] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:52:38.281 -[Thread-3] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:57:03.820 -[main] WARN  config.Config  -finish initPid()
+2019-04-15 18:57:05.214 -[main] INFO  com.alibaba.druid.pool.DruidDataSource  -{dataSource-1} inited
+2019-04-15 18:57:05.231 -[main] WARN  config.Config  -finish initDB()
+2019-04-15 18:57:05.231 -[main] WARN  config.Config  -finish initMongo()
+2019-04-15 18:57:05.231 -[main] WARN  config.Config  -finish initAll()
+2019-04-15 18:57:05.530 -[Thread-2] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.530 -[Thread-3] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.530 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.534 -[Thread-4] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.535 -[Thread-5] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.537 -[Thread-6] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.539 -[Thread-7] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.541 -[Thread-8] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.542 -[Thread-9] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.543 -[Thread-10] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.560 -[Thread-11] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:05.565 -[Thread-12] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:57:12.718 -[pool-2-thread-1] ERROR us.codecraft.webmagic.Spider  -process request Request{url='https://www.youtube.com/results?search_query=autism+spectrum+disorder&page=1', method='null', extras=null, priority=0, headers={}, cookies={}} error
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'IIX4a_6P8J0' for key 'videoID'
+	at com.jfinal.plugin.activerecord.Model.save(Model.java:324)
+	at pipeline.NormalPipeline$1.run(NormalPipeline.java:52)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:644)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:680)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:440)
+	at pipeline.NormalPipeline.save(NormalPipeline.java:41)
+	at pipeline.NormalPipeline.process(NormalPipeline.java:35)
+	at us.codecraft.webmagic.Spider.onDownloadSuccess(Spider.java:419)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:406)
+	at us.codecraft.webmagic.Spider.access$000(Spider.java:61)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:320)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'IIX4a_6P8J0' for key 'videoID'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2549)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1861)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2073)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2009)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5098)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1994)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:253)
+	at com.jfinal.plugin.activerecord.Model.save(Model.java:319)
+	... 14 more
+2019-04-15 18:57:52.315 -[Thread-4] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:52.570 -[Thread-8] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:52.744 -[Thread-6] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:52.759 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:52.996 -[Thread-2] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:53.046 -[Thread-11] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:53.089 -[Thread-12] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:53.115 -[Thread-10] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:53.240 -[Thread-9] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:53.300 -[Thread-5] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 11 pages downloaded.
+2019-04-15 18:57:54.133 -[Thread-7] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 10 pages downloaded.
+2019-04-15 18:57:54.147 -[Thread-3] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 12 pages downloaded.
+2019-04-15 18:59:02.751 -[main] WARN  config.Config  -finish initPid()
+2019-04-15 18:59:03.273 -[main] INFO  com.alibaba.druid.pool.DruidDataSource  -{dataSource-1} inited
+2019-04-15 18:59:03.286 -[main] WARN  config.Config  -finish initDB()
+2019-04-15 18:59:03.286 -[main] WARN  config.Config  -finish initMongo()
+2019-04-15 18:59:03.286 -[main] WARN  config.Config  -finish initAll()
+2019-04-15 18:59:03.496 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.498 -[Thread-4] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.497 -[Thread-2] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.497 -[Thread-3] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.516 -[Thread-5] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.521 -[Thread-6] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.522 -[Thread-7] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.527 -[Thread-8] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.535 -[Thread-9] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.537 -[Thread-10] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.551 -[Thread-11] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:03.552 -[Thread-12] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com started!
+2019-04-15 18:59:13.182 -[Thread-2] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.198 -[Thread-1] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.198 -[Thread-5] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.201 -[Thread-10] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.201 -[Thread-7] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.258 -[Thread-4] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.258 -[Thread-9] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.258 -[Thread-12] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.273 -[Thread-3] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.330 -[Thread-6] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.341 -[Thread-8] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
+2019-04-15 18:59:13.375 -[Thread-11] INFO  us.codecraft.webmagic.Spider  -Spider www.youtube.com closed! 1 pages downloaded.
